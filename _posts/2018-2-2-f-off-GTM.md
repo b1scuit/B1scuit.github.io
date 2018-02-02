@@ -20,7 +20,11 @@ also learnt about some fancy stuff with jQuery, if you were to type the followin
 $._data('.container', "events")
 ```
 
-You get a pretty little readout of all the events attached to that object, handy when you have some knuckle pull things like this:
+You get a pretty little readout of all the events attached to that object
+
+![GTM-01]({{ "/images/GTM-01.png" | absolute_url }})
+
+Handy when you have some knuckle pull things like this:
 
 ```javascript
 $('.post').each(function(){
