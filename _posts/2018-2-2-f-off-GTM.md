@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "F-off GTM"
-categories: GTM api rant development
+categories: Rants
 ---
 
 To whoever finds this message, 
@@ -30,3 +30,4 @@ $('.post').each(function(){
 })
 ```
 or something to that effect, cant remember if this is correct or not + dont care, you get the idea.
+
