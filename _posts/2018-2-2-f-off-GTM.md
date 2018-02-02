@@ -4,7 +4,7 @@ title: "F-off GTM"
 categories: Rants
 ---
 
-To whoever finds this message, 
+To whoever finds this message,
 
 I hate with all my heart and soul GTM (Google Tag Manager), its been 2 days now and the layout of this GTM configuration is insane.
 After debugging for ages, i've conme to the incredible conclusion that EVERYTHING IS FINE, except it dosnt work :/ .
