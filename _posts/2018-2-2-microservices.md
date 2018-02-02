@@ -6,7 +6,7 @@ categories: Random
 
 The premise is simple, you have a thing, big thing but its unmanageable and unwieldy (by thing I mean web application) and the thing can only be one thing, microservices change that.
 
-![Example]({{"https://www.weave.works/assets/images/bltc1f320aca569f087/microservices-infographic.png"}})
+![Example]({{"images/microservices.png" | absolute_url}})
 
 For example, I can have an application that's built in PHP and manages a company, do all there warehouse stuff and reports, etc.
 
