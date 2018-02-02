@@ -4,7 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about me!
+I'm a PHP web developer and sys/dev ops guy
+
+I also toy arounbd with embedded systems and build my own electronics for fun.
+
 
 ### More Information
 
