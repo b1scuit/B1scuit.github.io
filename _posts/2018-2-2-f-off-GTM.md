@@ -7,7 +7,7 @@ categories: Rants
 To whoever finds this message, 
 
 I hate with all my heart and soul GTM (Google Tag Manager), its been 2 days now and the layout of this GTM configuration is insane.
-After debugging for ages, i've conme to the incredible conclusion that EVERYTHING IS FINE, except it dosnt work :confused: .
+After debugging for ages, i've conme to the incredible conclusion that EVERYTHING IS FINE, except it dosnt work :/ .
 
 Still, managed to get GTM preview working in a local vagrant enviroment which is a plus, at least I can see what i'm doing now.
 
