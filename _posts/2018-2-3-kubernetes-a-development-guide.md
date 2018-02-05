@@ -36,7 +36,6 @@ _Current layout for staging sites, really need to change this_
 
 What happens is the web server passes the first part of the domain name to the app and the app looks up a configuration entry in the CouchDB database e.g. a document called company1 that contains all the configuration information for that instance, this saves having to deploy an application out for each and every client of the site, I currently have no idea what I`m going to do to solve that one.
 
-Either way, stick around, should be a fun road ahead.
+Either way, stick around, should be a fun road ahead, Dorothy.
 
-
-
+[Dockerizing a PHP web app](2018-2-5-Dockerizing-Basic-web-app)
