@@ -93,7 +93,7 @@ server {
 
 For the docker file I had a look about and found [this](https://hub.docker.com/r/webdevops/php-nginx/~/dockerfile/) so with a bit of tweaking, I'll be able to use this to direct my own, don't get me wrong there are [others](https://hub.docker.com/r/richarvey/nginx-php-fpm/~/dockerfile/) but it's got way too much crap in for what I'm trying to do and I'm bordering confused already, I don't need a docker file pushing me over the fence, I'm sure it's great, just not for me.
 
-So I'm basing my docker file off of this one which has [PHP 7.1 Ubuntu and NGINX](https://hub.docker.com/r/1and1internet/ubuntu-16-nginx-php-7.1/) already installed, so all I need to do is change the settings about.
+So I'm basing my docker file off of the basic ubuntu image (to keep things clean), so all I need to do is set up what I want and change the settings about.
 
 ```
 # Base image to start from
@@ -102,7 +102,7 @@ FROM ubuntu:latest
 # Stops tones of errors in console
 ENV DEBIAN_FRONTEND noninteractive
 
-# Replace any config files with out own
+# Replace any config files with out own 
 COPY .docker/root /
 
 # Standard install of stuff
@@ -139,7 +139,7 @@ EXPOSE 80 443
 Nice and simple docker, the `FROM` tell's it where to start off, the `COPY` just tells it where to copy the local stuff to inside the container and the `RUN` just runs a Linux command.
 
 > SideNote:
-> THING TO BARE IN MIND, docker only stores a recordable software state, not running services, if you start or run any services, these DO NOT get preserved, hence the weird `CMD /etc/init.d/php7.1-fpm start && /usr/sbin/nginx -g "daemon off;"` stuff,
+> THING TO BARE IN MIND, docker only stores a recordable software state, not running services, if you start or run any services, these DO NOT get preserved, hence the weird `CMD /etc/init.d/php7.1-fpm start && /usr/sbin/nginx -g "daemon off;"` stuff, 
 
 Now, that root folder, this is a way where you can replicate filesystem locations for config files, a really simple method for doing this and the `COPY .docker/root /` sorts it all out, just make sure you set whatever needed permissions in the `RUN` command.
 
@@ -154,7 +154,7 @@ This basically tells Docker to build a container using our docker file, name it 
 ![Shows docker output on a successful build]({{"images/docker-web-app/03.png" | absolute_url}})
 _If the result looks something similar to this, you did everything right, have a celebratory coffee!_
 
-> Sidenote:
+> Sidenote: 
 > Should you want to delete the local docker image, you can just use `docker rmi test` or whatever you called it.
 
 Now your app is dockerized, time to check if it all works, on to step 4
@@ -167,7 +167,7 @@ docker run --rm -it -p 8080:80 test
 ```
 _Quick command rundown: `docker run` runs a docker (surprisingly), `--rm` means run it until I exit, then remove it, `-it` means give me a shell, `-p 8080:80` means to map the host's port 8080 to the container's port 80 and finally `test` is the image name_
 
-Now if you visit `http://localhost:8080` you should have a running docker (that is until you press CTL-C) and it should look like this:
+Now if you visit `http://localhost:8080` you should have a running docker (that is until you press CTL-C) and it should look like this: 
 
 ![The result of our hard work]({{"images/docker-web-app/04.png" | absolute_url}})
 
