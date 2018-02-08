@@ -26,7 +26,7 @@ wpa_cli -i wlan0 reconfigure
 ```
 To get you all connected, from there just use `ifconfig wlan0` to see if you have an IP.
 
-Thats it, all there is to it.
+Thats it, all there is to it, If you are looking for more options check out this [tutorial](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 
 ### TL;DR
 - `sudo iwlist wlan0 scan | grep ESSID`
