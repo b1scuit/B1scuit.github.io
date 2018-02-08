@@ -38,4 +38,4 @@ What happens is the web server passes the first part of the domain name to the a
 
 Either way, stick around, should be a fun road ahead, Dorothy.
 
-[Dockerizing a PHP web app](2018-2-5-Dockerizing-Basic-web-app)
+[Dockerizing a PHP web app]({{ site.baseurl }}{% post_url 2018-2-5-Dockerizing-Basic-web-app %})

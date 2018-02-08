@@ -214,3 +214,5 @@ And now in your registry, you should see a brand new docker image available, hap
 ![oh jesus yes]({{"images/docker-web-app/08.png" | absolute_url}})
 
 Sweet! we now have a docker image where each time we push up to the repo, it will automatically build and publish the new image, and we have a system in place to run it locally for development, yes this is a bit cumbersome at present, however, I have plans to streamline that.
+
+[Local development with Kubernetes and Docker]({{ site.baseurl }}{% post_url 2018-2-6-Local-development-with-Kubernetes-and-Docker %}).
