@@ -1,5 +1,5 @@
-# Use the official Node.js 18 image as base
-FROM node:18-bullseye
+# Use the official Node.js 24.1.0 image as base
+FROM node:24.1.0-bullseye
 
 # Install additional system dependencies
 RUN apt-get update && apt-get install -y \

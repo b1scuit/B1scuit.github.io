@@ -5,7 +5,7 @@ This devcontainer provides a complete development environment for the React Type
 ## Features
 
 ### Development Environment
-- **Node.js 18** - Latest LTS version for optimal performance
+- **Node.js 24.1.0** - Latest stable version for optimal performance
 - **Oh My Zsh** - Enhanced terminal experience with useful plugins
 - **Global Tools**: TypeScript, ESLint, Prettier, Vite CLI
 - **Git & GitHub CLI** - Version control and GitHub integration
