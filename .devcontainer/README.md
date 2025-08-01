@@ -117,7 +117,8 @@ Add extensions to `.devcontainer/devcontainer.json`:
 ### Container Won't Start
 - Ensure Docker is running
 - Check Docker has sufficient resources allocated
-- Try rebuilding: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container"
+- Try rebuilding without cache: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container Without Cache"
+- If still failing, try: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container"
 
 ### Port Issues
 - Ensure ports 5173 and 4173 aren't in use on host machine
