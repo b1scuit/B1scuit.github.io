@@ -25,7 +25,7 @@ RUN npm install -g \
     npm@latest \
     typescript \
     ts-node \
-    @vitejs/create-vite \
+    create-vite \
     eslint \
     prettier \
     serve
